@@ -6,8 +6,8 @@ import pickle
 
 # Load the wine quality dataset (assuming it's in a CSV file)
 
-data = pd.read_csv('/home/mussie/Music/home projects/CI CD in ml/winequalityN.csv')
-
+#data = pd.read_csv('/home/mussie/Music/home projects/CI CD in ml/winequalityN.csv')
+data = pd.read_csv('winequalityN.csv')
 
 #fill missing values
 data.fillna(0,inplace=True)

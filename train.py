@@ -6,8 +6,8 @@ import pickle
 
 # Load the wine quality dataset (assuming it's in a CSV file)
 
-data = pd.read_csv('/home/mussie/Music/home projects/CI CD in ml/winequalityN.csv')
-
+#data = pd.read_csv('/home/mussie/Music/home projects/CI CD in ml/winequalityN.csv')
+data = pd.read_csv('winequalityN.csv')
 
 #fill missing values
 data.fillna(0,inplace=True)
@@ -24,7 +24,7 @@ y = data['quality']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Initialize the random forest regressor
-model = RandomForestRegressor(n_estimators=100, random_state=42)
+model = RandomForestRegressor(n_estimators=150, random_state=42)
 
 # Train the model
 model.fit(X_train, y_train)
